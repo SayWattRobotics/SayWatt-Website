@@ -909,6 +909,98 @@ window.SITE = {
        entry until every kid in the photos has a release form on file. */
     meetingNotes: [
       {
+        week:  "1.12",
+        date:  "Sunday, September 6, 2026",
+        time:  "3:00 – 5:00 PM",
+        theme: "690 Grams — Buoyancy Goes from Arithmetic to Measurement, and the Electrical Track Picks Its Language",
+
+        recap:
+          "Eleven of us at 1.12 — Trenton, Rhylan, Maddox, Liam, Isaac, Luke, Rebecca, Frankie, Oliver, " +
+          "Eli, and Tyler — from 3:00 to 5:00. Almost everything on the table this week was a promise from " +
+          "1.11 coming due. The headline is buoyancy again, but a different kind of buoyancy than last " +
+          "time. At 1.11 we calculated the displacement of the PVC we had on hand and designed around the " +
+          "number. This week we cut it, built it, and put it in water. Two 1-inch PVC buoyancy tubes, " +
+          "455 mm end to end, 285.6 grams and 285.8 grams — two parts that were supposed to come out " +
+          "identical came out identical, which is its own kind of good news. Both floated. Then we took " +
+          "the measurement that actually matters: the ROV weighs 3,500 grams sitting on the bench and " +
+          "690 grams once it is in the water. That second number is what a buoyancy design is aimed at, " +
+          "and now we know it instead of guessing at it. The electrical track closed its 1.11 action item " +
+          "too, and closed it properly — KiCad is the team's schematic and PCB tool, chosen with the pros " +
+          "and cons written down, and ANSI is the symbol standard, chosen after comparing it against IEC " +
+          "and NEMA. With a tool and a notation settled, they drew the first outline of how power actually " +
+          "flows through the TriggerFish control box. The sensor and software track went after the float: " +
+          "what a buoyancy engine is (a syringe that pulls water in to sink and pushes it out to rise), " +
+          "what it requires (a watertight control box and a pressure sensor), and how a vehicle knows " +
+          "which way is up (a 9-DoF IMU on the Raspberry Pi's I2C bus, Bosch or Adafruit, about twenty " +
+          "dollars). Mechanical kept the TriggerFish frame moving in CAD and sketched manipulator " +
+          "concepts. Management put the TVA grant into the season budget. And marketing started building " +
+          "the slide show for STEAM night at Rainbow Elementary.",
+
+        byNumbers: [
+          { value: "11",    label: "students at the bench" },
+          { value: "2",     label: "PVC buoyancy tubes built and float-tested" },
+          { value: "690 g", label: "the ROV's weight in water — against 3,500 g in air" },
+          { value: "3",     label: "symbol standards compared before choosing ANSI" }
+        ],
+
+        decisions: [
+          "KiCad is the team's schematic and PCB tool, and the reasoning is on the record: it is free, the parts library is enormous, and the board space is unlimited. It is also complex, and some parts are hard to find. That is a trade the team made on purpose instead of defaulting into.",
+          "ANSI is the team's electrical symbol standard. ANSI, IEC, and NEMA were all compared, and ANSI won because those are the symbols the team already recognizes. Which standard matters less than everybody drawing the same way — a documentation package that mixes notations is one the judges have to decode.",
+          "Buoyancy is built and measured now, not calculated. Two 1-inch PVC tubes at 455 mm, 285.6 g and 285.8 g, both positively buoyant in the water test — and the vehicle they have to lift weighs 690 g in water against 3,500 g in air.",
+          "The float's requirements get written before the float gets designed. A watertight control box and a pressure sensor are not optional, and the buoyancy engine is a syringe that takes water on to sink and pushes it out to rise.",
+          "An IMU goes on the short list — 9 degrees of freedom, on the Raspberry Pi's I2C bus, with both Bosch and Adafruit offering one around twenty dollars. Yaw, pitch, and roll is how the vehicle knows its own orientation.",
+          "The TVA grant is in the season budget. Money that has been awarded goes on the budget sheet, and the next question the CFO put to the team is what we should prototype — so the prototypes get costed instead of improvised."
+        ],
+
+        actionItems: [
+          { item: "Bring candidate company names to the team for a vote (carried from 1.11)",                     owner: "Trenton (CEO)",       due: "by 1.13" },
+          { item: "Finish the integrated master schedule — every sub-team on one calendar (carried from 1.11)",   owner: "Annabelle (COO)",     due: "by 1.13" },
+          { item: "Decide what the team should prototype so it can be costed into the budget",                    owner: "Maddox (CFO)",        due: "by 1.13" },
+          { item: "Fix the basic frame CAD",                                                                      owner: "Adrian (Mechanical)", due: "by 1.13" },
+          { item: "Keep the manipulator brainstorm going — a pros-and-cons list for each way of moving the claw",  owner: "Eli (Payload)",       due: "by 1.13" },
+          { item: "Research the sensor modules and bring back a recommendation",                                  owner: "Rhylan (Sensor)",     due: "by 1.13" },
+          { item: "Finish the STEAM night slide show for Rainbow Elementary",                                     owner: "Lillian (Marketing)", due: "Sept 30" },
+          { item: "Create the team Instagram account",                                                            owner: "Lillian (Marketing)", due: "by 1.13" },
+          { item: "Get better photographs of the ROV for the marketing display",                                  owner: "Lillian (Marketing)", due: "by 1.13" }
+        ],
+
+        learned: [
+          "Weight in air and weight in water are two different numbers, and the second one is what you design for. The ROV is 3,500 grams on the bench and 690 grams in the water — the water is already holding up most of it.",
+          "Two parts that are supposed to be identical should measure identical. 285.6 grams and 285.8 grams out of the same build is evidence the process is repeatable, and repeatable is what you need when you build the second one and the third.",
+          "A float test is cheap, fast, and final. You can argue with a calculation. You cannot argue with a tube that floats.",
+          "Free is not the same as easy. KiCad costs nothing and gives you an enormous parts library and unlimited board space, and it is genuinely hard to learn and sometimes hard to find a part in. Writing both columns down is what turns a preference into a decision.",
+          "There is more than one correct way to draw a resistor. ANSI, IEC, and NEMA are all real standards. The team picked ANSI because it already reads those symbols — and the choice matters mostly because everybody has to draw the same way.",
+          "A buoyancy engine is a syringe. Draw water in and the float gets heavier and sinks; push it out and the float gets lighter and rises. The hard engineering is the watertight box around it and the pressure sensor that tells it how deep it is.",
+          "An IMU is how a vehicle knows which way is up. Nine degrees of freedom gives you yaw, pitch, and roll, it talks to the Raspberry Pi over I2C, and it costs about twenty dollars — a lot of capability for the price of a pizza."
+        ],
+
+        studentOutcomes: [
+          "Cut, assembled, and weighed two 1-inch PVC buoyancy tubes to a common spec, then float-tested both.",
+          "Measured the ROV's mass in air and in water, and understood why the in-water number is the design target.",
+          "Evaluated KiCad against the team's needs and wrote down the pros and cons before committing to it.",
+          "Compared the ANSI, IEC, and NEMA electrical symbol standards and chose one for the whole team to draw in.",
+          "Drew a first outline of how power flows through the TriggerFish control box.",
+          "Researched vertical profiling floats and buoyancy engines, and turned that research into requirements instead of a wish list.",
+          "Researched 9-DoF inertial measurement units for the Raspberry Pi, including how they interface and what they cost.",
+          "Advanced the TriggerFish frame in CAD and sketched payload manipulator concepts.",
+          "Started the outreach slide show for STEAM night at Rainbow Elementary."
+        ],
+
+        nextWeek:
+          "Phase 1 still owes itself a closing — the final TriggerFish demonstration for parents, " +
+          "stakeholders, and sponsors, and the role retrospective that goes with it. Four items have now " +
+          "carried across two sessions and should close first: the company name vote, the integrated " +
+          "master schedule, capsule dive #3 (the gate is three consecutive dry dives), and the first " +
+          "walkthrough of a System Integration Diagram. The rest of the near-term work is concrete — the " +
+          "frame CAD gets finished, the manipulator concepts get a written pros-and-cons list, the sensor " +
+          "track brings back a recommendation, and the STEAM night slide show has a hard date: " +
+          "September 30.",
+
+        photoConsentPending: false,
+
+        pdfUrl: "assets/meetings/1.12/meeting-note.pdf"
+      },
+      {
         week:  "1.11",
         date:  "Sunday, August 30, 2026",
         time:  "3:00 – 5:00 PM",
@@ -2388,6 +2480,52 @@ window.SITE = {
        builders" do the work. Set photoConsentPending: true to hide the
        hero and gallery for any entry whose releases are not yet on file. */
     meetingNotes: [
+      {
+        week:  "1.4",
+        date:  "Sunday, September 6, 2026",
+        time:  "1:30 – 2:30 PM",
+        theme: "Mission Strategy, and a Guest Who Writes Software for a Living",
+
+        heroPhoto: {
+          src:     "assets/meetings/fll/1.4/00-hero-bioglow-table-complete.jpg",
+          alt:     "The completed FIRST LEGO League BIOGLOW competition table, with every mission model built by hand and set in position on the printed field mat.",
+          caption: "The BIOGLOW table, finished. Every mission model built by hand and set in its place — which is the moment the season stops being a rulebook and becomes a board you can look at.",
+          requiresConsent: false
+        },
+
+        recap:
+          "Six builders this week, and the table was finally finished — every mission model built and " +
+          "standing in its place on the mat. That is the moment the season stops being a rulebook and " +
+          "becomes a board you can actually look at, so that is what we did first: our first real go at " +
+          "mission strategy. With all of it in front of you at once you can start asking the questions " +
+          "that matter. Which missions does the robot go after? In what order? What does it have to be " +
+          "able to do to get there? And what is worth leaving alone? Then we had a guest. Mr. Hart, a " +
+          "software engineer at Northrop Grumman, came and taught the team a software lesson — a working " +
+          "engineer in the room, showing kids what the job actually looks like. Homework went out on the " +
+          "way out the door: go look into different robot designs, and find out who can make it Monday, " +
+          "because Monday is when the robot base build starts.",
+
+        byNumbers: [
+          { value: "4th", label: "meeting of the BIOGLOW season" },
+          { value: "6",   label: "builders at the table" },
+          { value: "1st", label: "look at mission strategy" },
+          { value: "1",   label: "guest software engineer from Northrop Grumman" }
+        ],
+
+        learned: [
+          "You cannot plan a run until you can see the whole board. That is why building every mission model by hand was worth the hours — the missions are objects on a table now, not pictures in a rulebook.",
+          "Strategy comes before programming. Deciding which missions the robot goes after, and in what order, is what tells you what the robot has to be able to do. Build the plan first and the robot second.",
+          "You do not have to attempt everything. A match is two and a half minutes, which is not much time at all, so choosing what to skip is part of the plan and not a failure of it.",
+          "Ask somebody who does it for a living. A software engineer came in and taught the lesson this week — the same instinct one of our builders had back at 1.2, when the answer to a hard problem was to go find an expert and ask."
+        ],
+
+        nextWeek:
+          "The robot base build starts Monday for whoever can make it. Homework in the meantime is to " +
+          "look into different robot designs — because before you build the right base, it helps to know " +
+          "what other people have built, and why they built it that way.",
+
+        photoConsentPending: false
+      },
       {
         week:  "1.3",
         date:  "Sunday, August 30, 2026",

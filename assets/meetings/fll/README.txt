@@ -93,8 +93,54 @@ MEETING 1.3 — Sunday, August 30, 2026 · "Define It Before You Solve It"
   Attendance was four: Alex, Claire, Isaiah, Daniel. Names do not appear
   in the entry, per the house rule.
 
+MEETING 1.4 — Sunday, September 6, 2026 · "Mission Strategy, and a Guest"
+  00-hero-bioglow-table-complete.jpg
+    HERO. The finished BIOGLOW competition table — every mission model
+    built and set in position on the printed field mat, shot from the
+    corner of the practice table in the garage.
+
+    Source was a 5712 x 3213 JPEG; converted to progressive JPEG and
+    resized to 1920 px on the long edge, per the house convention.
+
+    NOTE — a FIRST championship lanyard hangs on the wall at the top
+    right of the frame with a student's first name legible at full size.
+    That student is on the ROV team, not the FLL team, and Preston
+    approved publishing the photo as shot. If the no-names rule should
+    apply here after all, crop the right edge or blur the badge and
+    re-drop the file under the same name.
+
+    No students appear in this photo, so consent is not at issue.
+
+  INCOMPLETE SOURCE — same situation as 1.3. The raw notes carry an
+  agenda ("First go at Mission Strategy" and a software lesson from a
+  guest) and homework, but the "Accomplished" and "Notes" sections were
+  left blank. The published entry is written from the agenda and the
+  photo, and claims no outcome that was not recorded.
+
+  To upgrade this entry, four facts would do it:
+    1. Which missions the team actually flagged as worth attempting.
+    2. What the software lesson covered — blocks, sequencing, sensors?
+    3. Whether the team got any of it onto a hub before the hour ended.
+    4. Who ended up coming Monday for the robot base build.
+
+  GUEST CREDIT — the entry names Mr. Hart, a software engineer at
+  Northrop Grumman, who taught the software lesson. The no-names house
+  rule covers students, not adult volunteers, and crediting a guest
+  professional is worth doing. Raw notes read "Mr Hart ... Northrup
+  Gruman"; corrected to "Northrop Grumman" in the published entry.
+  Strip the name if he did not want to be named publicly.
+
+  Attendance was six: Alex, Isaiah, Savannah, Claire, Jenna, Samuel.
+  Names do not appear in the entry, per the house rule. Jenna is on the
+  attendance line this week — see the 1.2 note, where she was missing
+  from it.
+
+  MATCH LENGTH — the entry states an FLL Robot Game match is two and a
+  half minutes. That is the standard match length and is stated as
+  general fact, not as something the team measured.
+
 FIELD NOTE ON `time`
-  Entry 1.1 has no `time` field. Entries 1.2 and 1.3 include one
+  Entry 1.1 has no `time` field. Entries 1.2, 1.3 and 1.4 include one
   (1:30 – 2:30 PM) because the source notes recorded it and the renderer
   displays it beside the date. Worth backfilling 1.1 if anyone remembers
   the hour.
@@ -120,7 +166,7 @@ HOUSE RULES FOR FLL ENTRIES
     that ever changes.
 
 CONSENT
-  Entry 1.1 is published with photoConsentPending: false — hero and
+  Entries 1.1 and 1.4 are published with photoConsentPending: false — hero and
   gallery live. If a release is ever pulled, flip that flag to true in
   content.js and the renderer hides the hero and the gallery on its own
   and shows a short placeholder instead. Adults appear in the hero; the
